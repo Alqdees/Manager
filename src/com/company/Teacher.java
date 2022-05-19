@@ -75,6 +75,12 @@ public class Teacher {
         Model model = new Model(id);
         models.remove(model);
     }
+    public void editSession(String id,String name){
+        Model model = new Model(id,name);
+        ArrayList<Model> arrayList = new ArrayList<>();
+        int edit = arrayList.indexOf(id);
+        arrayList.set(edit,model);
+    }
 
 }
 

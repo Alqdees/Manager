@@ -87,10 +87,17 @@ public class Tools extends Teacher {
                     id = scan.next();
                     teacher.deleteSession(id);
                     break;
-                default:
-                    System.out.println("bad Entry");
+                case 3:
+                    id =scan.next();
+                    name =scan.next();
+                    teacher.editSession(id,name);
+
+//                    System.out.println("bad Entry");
                     break;
             }
+        }
+        else if (List_number == 3){
+
         }
     }
 
